@@ -1,6 +1,7 @@
 # Rails + Grape API
 
 This is an API example created using [Grape](https://github.com/ruby-grape/grape) over an Ruby on Rails project.
+The database using is the default sqlite3 using activerecord.
 
 So you can add new entries using curl:
 

@@ -1,6 +1,6 @@
 # Rails + Grape API
 
-This is an API exmaple created using [Grape](https://github.com/ruby-grape/grape)
+This is an API example created using [Grape](https://github.com/ruby-grape/grape) over an Ruby on Rails project.
 
 So you can add new entries using curl:
 

@@ -1,24 +1,13 @@
-# README
+# Rails + Grape API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an API exmaple created using [Grape](https://github.com/ruby-grape/grape)
 
-Things you may want to cover:
+So you can add new entries using curl:
 
-* Ruby version
+* curl -H "Content-Type: application/json" -X POST -d '{"name":"BookName","author":"xyz","year":"1995"}' http://localhost:3000/api/v1/book_data.json
 
-* System dependencies
+Also you can delete an entry:
+* curl -X DELETE http://localhost:3000/api/v1/book_data/1.json
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Or Update an Author for a specific entry:
+* curl -X PUT http://localhost:3000/api/v1/book_data/1.json -d "author=AnotherAuthor"
